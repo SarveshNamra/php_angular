@@ -1,0 +1,24 @@
+<h2>Student Management</h2>
+
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (student of students; track student.id) {
+            <tr>
+                <td>{{student.id}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.age}}</td>
+                <td>{{student.marks}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
